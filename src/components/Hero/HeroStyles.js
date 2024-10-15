@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ContainerStyled, WrapperStyled } from "../mockups/Mockups";
+import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 
 export const HeroContainer = styled(ContainerStyled)`
     padding: 120px 0;

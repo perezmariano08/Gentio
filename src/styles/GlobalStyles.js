@@ -30,6 +30,7 @@ export const GlobalStyles = createGlobalStyle`
         user-select: none;
     }
 
+    
     h1 {
         font-size: 11.8vh;
         line-height: 90%;
