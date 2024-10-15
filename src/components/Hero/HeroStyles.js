@@ -1,45 +1,16 @@
-import styled, { keyframes } from "styled-components";
+
+import styled from "styled-components";
 import { ContainerStyled, WrapperStyled } from "../Mockups/Mockups";
 
-// Define la animación de desenfoque
-const glowAnimation = keyframes`
-    0% {
-        opacity: 0; /* Disminuir la opacidad inicial */
-        filter: blur(0);
-    }
-    25% {
-        opacity: 0.5; /* Sutileza en el cambio de opacidad */
-        filter: blur(8px); /* Reducir el desenfoque */
-    }
-
-
-    100% {
-        opacity: 0; /* Mantener la opacidad baja al final */
-        filter: blur(0);
-    }
-`;
-
-
 export const HeroContainer = styled(ContainerStyled)`
-    padding: 160px 0 80px 0; 
-    /* background-image: url(/videos/bg_hero.mov);
+    padding: 120px 0;
+    background-image: url(/imgs/bg_hero.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover; */
-    height: 100%;
+    background-size: cover;
+    min-height: 100vh;
     position: relative;
-    overflow: hidden;
 
-    video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
-    }
-    
     &::before {
         content: '';
         position: absolute;
@@ -73,6 +44,7 @@ export const HeroContainer = styled(ContainerStyled)`
         z-index: 1; // Asegúrate de que esté por encima de otros elementos
         animation: ${glowAnimation} 5s infinite; // Aplica la animación
     }
+
 `
 
 export const HeroWrapper = styled(WrapperStyled)`
@@ -106,6 +78,9 @@ export const HeroText = styled.div`
         &:hover {
             text-decoration: underline;
         }
+        color: orange;
+        text-transform: uppercase;
+        font-size: 20px;
     }
 
     h1 {

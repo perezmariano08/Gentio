@@ -18,7 +18,6 @@ export const NavbarContainer = styled(ContainerStyled)`
     }
 `;
 
-
 export const NavbarWrapper = styled(WrapperStyled)`
     height: 100%;
     align-items: center;

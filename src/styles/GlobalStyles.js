@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import { FontStyles } from './fonts';  // Importa el archivo de fuentes
 
 export const GlobalStyles = createGlobalStyle`
     :root {
@@ -90,14 +91,17 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 128px;
         line-height: 90%;
         font-weight: 400;
+        font-size: 11.8vh;
+        line-height: 90%;
 
         @media (max-width: 768px) {
         }
 
         @media (max-width: 768px) {
             font-size: 60px;
+        @media (max-width: 468px) {
         }
-    }
+    }}
 `
 
 

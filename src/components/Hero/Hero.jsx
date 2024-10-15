@@ -2,6 +2,7 @@ import React from 'react'
 import { HeroContainer, HeroEstadistica, HeroEstadisticaNumero, HeroEstadisticasWrapper, HeroText, HeroWrapper } from './HeroStyles'
 import { RiArrowRightUpLine } from "react-icons/ri";
 import bgHero from '/videos/bg_hero_1.mp4'
+import { HeroContainer, HeroText, HeroWrapper } from './HeroStyles'
 
 const Hero = () => {
     return (
